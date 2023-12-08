@@ -46,10 +46,11 @@ def convert_e2e(path, output_dir, filename_base):
         vol_dir = os.path.join(output_dir, f"Volume{i}")
         if not os.path.isdir(vol_dir):
             os.mkdir(vol_dir)
-        path = os.path.join(vol_dir, f"{filename_base}_vol{i}_.png")
+        path = os.path.join(vol_dir, f"{filename_base}_vol{i}.png")
         current_volume.save(path)
 
 
 
-path = '/Users/rick/Documents/e2e'
+#path = '/Users/rick/Documents/e2e'
+path = "C:\\Users\\Rick\\Documents\\UveitisData\\e2e"
 convert(path)
